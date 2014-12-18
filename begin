@@ -1,0 +1,22 @@
+#Text-adventure prototype 1.0
+
+print 'Your eyes slowly open... an old man stands over you.'
+print '"Why hello my friend, what might you name be?"'
+name = raw_input('Enter your name:')
+print '"Ah,',name
+print 'a good name... there was a hero named',name,'a long time ago."'
+print 'The old man sits you up.'
+print 'You are in a clay hut, there are shelves on the walls that are filled with diffrent colors potions.'
+print '"I found you in your burnt farm house, you got raided by those nasty'
+print ' barberic thieves."'
+
+def question1():
+    print '"Well, im vary sorry... how do you feel'
+
+remember = raw_input('Do you remember this? Y/N:')
+if remember == 'y':
+    question1()
+elif remember == 'n':
+    print '"ah, well... the riders torched your barn and killed your livestock... then they plundered your house."'
+    question1()
+
