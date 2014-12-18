@@ -8,15 +8,15 @@ print 'a good name... there was a hero named',name,'a long time ago."'
 print 'The old man sits you up.'
 print 'You are in a clay hut, there are shelves on the walls that are filled with diffrent colors potions.'
 print '"I found you in your burnt farm house, you got raided by those nasty'
-print ' barberic thieves."'
+print ' barbaric thieves."'
 
 def question1():
-    print '"Well, im vary sorry... how do you feel'
+    print '"Well, I\'m very sorry... how do you feel?'
 
 remember = raw_input('Do you remember this? Y/N:')
 if remember == 'y':
     question1()
 elif remember == 'n':
-    print '"ah, well... the riders torched your barn and killed your livestock... then they plundered your house."'
+    print '"Ah, well... the riders torched your barn and killed your livestock... then they plundered your house."'
     question1()
 
