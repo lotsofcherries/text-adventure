@@ -2,6 +2,10 @@
 
 import time
 
+coins = 0
+inventory = [ 'blank', 'blank', 'blank', 'blank', 'blank']
+market = 'start'
+
 print ('Your eyes slowly open... an old man stands over you.')
 
 time.sleep(2)
@@ -44,5 +48,24 @@ def remember():
         remember()
         
 remember()
+
+time.sleep(2)
+print('"You want revenge? If you do, you will need supplies."')
+print('"Here are 50 coins. Use them to buy stuff at the market."')
+
+time.sleep(2)
+print('You are at the market.')
+
+def buy():
+    if market = 'start':
+        print('What do you want to buy?')
+        print(' 1. Armor')
+        print(' 2. Weapons')
+        buy = input('Enter the number of the item:')
+        if buy = 1:
+            
+
+
+
 
 
