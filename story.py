@@ -2,14 +2,12 @@
 
 import time
 
-time.sleep(1)
 print ('Your eyes slowly open... an old man stands over you.')
 
 time.sleep(2)
 print ('"Why hello my friend, what might your name be?"')
 name = input('Enter your name:')
 
-time.sleep(2)
 print ('"Ah,',name)
 print ('a good name... there was a hero named ',name,' a long time ago."')
 
@@ -22,17 +20,16 @@ print ('"I found you in your burnt farm house, after you got raided by those nas
 print (' barbaric thieves."')
 
 def question1():
-    time.sleep(2)
     print ('"Well, I\'m very sorry... how do you feel?')
     feeling = input('happy/sad/angry:')
     if feeling == 'happy':
-        print('That\'s very strange.')
+        print('"That\'s very strange."')
     elif feeling == 'sad':
-        print('I am too.')
+        print('"I am too."')
     elif feeling == 'angry':
-        print('I understand.')
+        print('"I understand."')
     else:
-        print('Sorry, I didn\' catch that.')
+        print('"Sorry, I didn\'t catch that."')
         question1()
 
 def remember():
