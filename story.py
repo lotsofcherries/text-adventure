@@ -5,24 +5,35 @@ import time
 time.sleep(1)
 print ('Your eyes slowly open... an old man stands over you.')
 
-time.sleep(1)
+time.sleep(2)
 print ('"Why hello my friend, what might your name be?"')
 name = input('Enter your name:')
 
-time.sleep(1)
+time.sleep(2)
 print ('"Ah,',name)
 print ('a good name... there was a hero named ',name,' a long time ago."')
 
-time.sleep(1)
+time.sleep(2)
 print ('The old man sits you up.')
 print ('You are in a clay hut, and there are shelves on the walls that are filled with different colored potions.')
 
-time.sleep(1)
+time.sleep(2)
 print ('"I found you in your burnt farm house, after you got raided by those nasty')
 print (' barbaric thieves."')
 
 def question1():
+    time.sleep(2)
     print ('"Well, I\'m very sorry... how do you feel?')
+    feeling = input('happy/sad/angry:')
+    if feeling == 'happy':
+        print('That\'s very strange.')
+    elif feeling == 'sad':
+        print('I am too.')
+    elif feeling == 'angry':
+        print('I understand.')
+    else:
+        print('Sorry, I didn\' catch that.')
+        question1()
 
 def remember():
     rememberance = input('Do you remember this? Y/N:')
@@ -34,4 +45,7 @@ def remember():
     else:
         print ('"What was that you said?"')
         remember()
+        
 remember()
+
+
